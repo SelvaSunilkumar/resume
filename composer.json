@@ -15,5 +15,9 @@
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
-	}
+	},
+	"post-install-cmd": [
+		"php artisan clear-compiled",
+		"chmod -R 777 public/"
+	]
 }
